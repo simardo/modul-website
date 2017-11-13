@@ -10,6 +10,8 @@ function resolve(dir) {
 }
 
 module.exports = function (env) {
+    var isProd = !!(env && env.prod);
+
     var config = {
         entry: {
             app: ["./src/app/main.ts"]
@@ -46,6 +48,7 @@ module.exports = function (env) {
                         {
                             loader: 'postcss-loader',
                             options: {
+                                sourceMap: !isProd,
                                 plugins: function () {
                                     return [
                                         require('autoprefixer')
