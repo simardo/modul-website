@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+  - "8"
+
+branches:
+  only:
+  - master
+  - dev
+
+script: npm run build
+
+cache:
+  directories:
+    - node_modules
+
+git:
+depth: 1
