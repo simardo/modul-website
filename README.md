@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/simardo/modul-website.svg?branch=master)](https://travis-ci.org/simardo/modul-website)
+
 # modul-website
 The official website of Modul (beta release)
 
